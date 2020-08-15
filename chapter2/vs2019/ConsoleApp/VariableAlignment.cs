@@ -2,7 +2,7 @@
 
 namespace ConsoleApp
 {
-    class Program
+    class VariableAlignment
     {
         static void Main(string[] args)
         {
