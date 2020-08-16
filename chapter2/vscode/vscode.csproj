@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CompareNames</StartupObject>
+    <StartupObject>NumbericDatatypes</StartupObject>
   </PropertyGroup>
 
 </Project>

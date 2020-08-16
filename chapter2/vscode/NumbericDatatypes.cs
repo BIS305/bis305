@@ -4,8 +4,8 @@ using static System.Console;
 class NumbericDatatypes {
     static void Main()
     {
-        int intTest = Convert.ToInt32(1 / (double)3); // Integer - 0 digits (to the right of the decimal point)
-        float sngTest = (float)(1 / (double)3); // Single (or Single Floating Point) - 7 digits (32 bit)
+        int intTest = Convert.ToInt32(1 / 3D); // Integer - 0 digits (to the right of the decimal point)
+        float sngTest = (1 / (float)3); // Single (or Single Floating Point) - 7 digits (32 bit)
         double dblTest = 1.0D / 3; // Double (or Double Floating Point) - 15-16 digits (64 bit)
         decimal decTest = 1M / 3M; // Decimal - 28-29 digits (128 bit)
         long lngTest = Convert.ToInt64(1 / (double)3); // Long (Integer) - 0 digits
