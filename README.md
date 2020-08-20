@@ -8,4 +8,4 @@ In the top-right corner of the page, click Fork.
 
 ![Fork Button](https://github.com/m2web/nku305/blob/master/images/ForkButton.PNG?raw=true)
 
-For details on forking a repository, go [here.](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+For details on forking a repository, go <a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo" target="_blank">here</a>
