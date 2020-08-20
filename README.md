@@ -5,4 +5,5 @@ This repo holds code and assets for my BIS 305 Programming Class.
 A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. 
 
 In the top-right corner of the page, click Fork.
-![](images/Fork Button.PNG?raw=true)
+
+![Fork Button](https://github.com/m2web/nku305/tree/master/images/Fork Button.PNG?raw=true)
