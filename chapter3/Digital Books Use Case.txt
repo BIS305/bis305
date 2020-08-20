@@ -1,0 +1,9 @@
+Use Case Definition 
+1. The program displays the abililty to view an EBook or Audio Book option.
+2. The user selects an ebook or audio book.
+3. The program displays a picture of the digital book choosen by the user and enables the ability to make a digital book final selection.
+4. The user selects to view the type of digital book as desired. 
+5. The program displays the picture of the choosen digital book.
+6. The user makes the final selection.
+7. The program displays a confirmation message and disables the abililty to select again.
+8. The user exists the program.

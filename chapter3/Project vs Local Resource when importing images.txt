@@ -1,0 +1,8 @@
+When importing a resource (an image in this case) you have the option of importing a local resource or a project resource. What is the difference?
+
+Resource context
+Visual Studio supports two resource scopes: local and project. Select the context for your resources by clicking the appropriate radio button.
+
+Local Resources are seen by only the form (or control) in question. They are imported to the form's corresponding .resx file and can generally only be used on that form.
+
+Project Resources are imported to your main project's resource file Resources.resx They can be used anywhere in your project.
