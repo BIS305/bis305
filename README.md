@@ -6,4 +6,4 @@ A fork is a copy of a repository. Forking a repository allows you to freely expe
 
 In the top-right corner of the page, click Fork.
 
-![Fork Button](https://github.com/m2web/nku305/tree/master/images/Fork Button.PNG?raw=true)
+![Fork Button](https://github.com/m2web/nku305/blob/master/images/Fork%20Button.PNG?raw=true)
