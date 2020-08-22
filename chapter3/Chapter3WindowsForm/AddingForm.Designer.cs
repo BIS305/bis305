@@ -76,6 +76,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 26);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox2
             // 
@@ -84,6 +85,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 26);
             this.textBox2.TabIndex = 2;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblSum
             // 
@@ -94,6 +96,7 @@
             this.lblSum.Size = new System.Drawing.Size(81, 20);
             this.lblSum.TabIndex = 5;
             this.lblSum.Text = "XXXXXXXXX";
+            this.lblSum.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblSum.Visible = false;
             // 
             // AdditionForm

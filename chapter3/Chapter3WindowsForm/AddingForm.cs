@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
             int num1 = Convert.ToInt32(textBox1.Text);
             int num2 = Convert.ToInt32(textBox2.Text);
             int sum = num1 + num2;
-            lblSum.Text = String.Format("The sum is {0}", sum.ToString("C"));
+            lblSum.Text = String.Format("{0}", sum);
         }
     }
 }
