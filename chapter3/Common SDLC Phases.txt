@@ -1,0 +1,14 @@
+The common phases of a software development life cycle are as follows: 
+1. Gather and Analyze the Program Requirements — The developer must obtain information that identifies the program requirements and then docu-ment these requirements. 
+
+2. Design the User Interface — After the developer understands the program requirements, the next step is to design the user interface. The user interface provides the framework for the processing that will occur within the program. 
+
+3. Design the Program Processing Objects — A computer program consists of one or more processing objects that perform the tasks required by the program. The developer must determine what processing objects are required and then determine the requirements of each object. 
+
+4. Code the Program — After a processing object has been designed, the object must be implemented in program code. Program code is the set of instructions, written using a programming language such as Visual Basic 2017, that a computer executes. 
+
+5. Test the Program — As the program is being coded, and after the coding is completed, the developer should test the program code to ensure it is execut-ing properly. The testing process is ongoing and includes a variety of stages. 
+
+6. Document the Program/System — As a program is being designed and coded, and after the process is completed, the developer should document the program. Documenting a program means using a prescribed method to write down the instructions for using the program, the way the program performs its tasks, and other items that users, developers, and management might require.
+
+7. Maintain the Program/System — After a program is put into use, it probably will have to be modified in the future. For example, if a third type of latte is added to the Latte Selection program, it must be changed to reflect the new latte type. The process of changing and updating programs is called program and system maintenance
