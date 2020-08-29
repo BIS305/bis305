@@ -8,11 +8,13 @@ namespace LogicalOperatorsShortCircuit
     {
         static void Main(string[] args)
         {
-            bool Condition1() { 
+            bool Condition1() {
+                WriteLine("Condition1()");
                 return false; 
             }
 
-            bool Condition2() { 
+            bool Condition2() {
+                WriteLine("Condition2()");
                 return true; 
             }
 
@@ -27,6 +29,8 @@ namespace LogicalOperatorsShortCircuit
                 //both operands evaluated
             }
 
+            WriteLine("Short circuited logical operators next:");
+
             if (Condition1() && Condition2())
             {
                 //inside code will not execute
@@ -37,6 +41,9 @@ namespace LogicalOperatorsShortCircuit
                 //inside code will execute
                 //Condition2 not evaluated
             }
+
+            Write("[Press any key to continue]");
+            ReadKey();
         }
     }
 }
