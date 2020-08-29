@@ -37,7 +37,7 @@ namespace CompareThreeNumbers
                 else
                     WriteLine("No two numbers are equal");
 
-                //convention that I like
+                ////convention that I like
                 //if (num1 == num2)
                 //{
                 //    if (num1 == num3)
@@ -53,7 +53,7 @@ namespace CompareThreeNumbers
                 //{
                 //    WriteLine("First and last are equal");
                 //}
-                //else if(num2 == num3)
+                //else if (num2 == num3)
                 //{
                 //    WriteLine("Last two are equal");
                 //}
