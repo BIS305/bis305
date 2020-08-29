@@ -42,6 +42,27 @@ namespace LogicalOperatorsShortCircuit
                 //Condition2 not evaluated
             }
 
+            //WriteLine("Short circuited logical operators with the ! next:");
+
+            //if (!Condition1() && Condition2())
+            //{
+            //    //inside code will NOW execute
+            //    //both operands evaluated
+            //}
+            //if (!Condition2() || Condition1())
+            //{
+            //    //inside code will NOW execute
+            //    //both operands evaluated
+            //}
+
+            //WriteLine("Ternary operator next:");
+            //WriteLine(Condition1() ? "Yes" : "No");
+            //WriteLine(Condition2() ? "Yes" : "No");
+
+            //WriteLine("Ternary operator with the ! NOT next:");
+            //WriteLine(!Condition1() ? "Yes" : "No");
+            //WriteLine(!Condition2() ? "Yes" : "No");
+
             Write("[Press any key to continue]");
             ReadKey();
         }
