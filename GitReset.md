@@ -1,4 +1,4 @@
-Contents {#contents .TOC-Heading}
+Git Reset & the Three Locations
 ========
 
 [Introduction](#introduction)
