@@ -9,25 +9,26 @@ IF(Test-Path test){
 	
 } 
 
+#make a directory named test
 mkdir test
+
+#set the working location in the test folder
 Set-Location test
 
+#create an empty Git repository
 git init
 
-#number of commits on the master branch
+#the commits to place in the repo
 $numberOfCommitsArray = @("File.txt v1", "File.txt v2", "File.txt v3")
- 
-for($i = 0; $i -lt $numberOfCommitsArray.length; $i++){ 
+
+#iterate each string in the $numberOfCommitsArray
+for($i = 0; $i -lt $numberOfCommitsArray.length; $i++){
+	#send the string to a newly created file of the same name as the string
 	$numberOfCommitsArray[$i] | Out-File $numberOfCommitsArray[$i]
+
+	#add the file to stage (index)
 	git add .
+
+	#create a new commit containing the current contents of stage with the log message of the string
 	git commit -m $numberOfCommitsArray[$i]
 }
-
-#in a separte terminal run this script to view the .git structure updates
-#DO
-#{
-#clear
-#tree .git
-#Start-Sleep -s 2
-#}
-#While (1 -eq 1)
