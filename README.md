@@ -8,4 +8,4 @@ In the top-right corner of the page, click Fork.
 
 ![Fork Button](https://github.com/BIS305/bis305/blob/master/images/ForkButton.PNG?raw=true)
 
-For details on forking and contributing to this repository, go <a href="https://github.com/BIS305/bis305/blob/master/ContributeToARepo.md" target="_blank">here</a>
+For details on forking and contributing to this repository, go <a href="https://github.com/BIS305/bis305/blob/master/HowToContributeToARepo.md" target="_blank">here</a>

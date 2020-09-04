@@ -1,4 +1,4 @@
-Contribute to a Repository on GitHub
+How to Contribute to a Repository on GitHub
 ========
 
 Go to the repository (repo) to which you would like to contribute. Here,
