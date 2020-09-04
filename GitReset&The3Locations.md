@@ -5,7 +5,7 @@ Git Reset & the Three Locations
 
 [Soft Reset](#soft-reset)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[How Can This Help Me? 4](#how-can-this-help-me)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[How Can This Help Me?](#how-can-this-help-me)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Reset Back to 3rd Commit](#reset-back-to-3rd-commit)
 
