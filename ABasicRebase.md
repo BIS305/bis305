@@ -1,4 +1,4 @@
-### **The Basic Rebase**
+### **A Basic Rebase**
 
 I have a bash shell script that creates three commits in the master
 ranch. Then, the script creates and checks out a new branch called
