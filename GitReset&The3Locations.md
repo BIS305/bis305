@@ -1,5 +1,6 @@
 Git Reset & the Three Locations
 ========
+<sup>Adapted from https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified</sup>
 
 [Introduction](#introduction)
 

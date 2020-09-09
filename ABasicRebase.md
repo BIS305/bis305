@@ -1,5 +1,7 @@
 ### **A Basic Rebase**
 
+<sup>Adapted from https://git-scm.com/book/en/v2/Git-Branching-Rebasing</sup>
+
 I have a bash shell script that creates three commits in the master
 ranch. Then, the script creates and checks out a new branch called
 feature. In the feature branch two commits are created. Finally, two
