@@ -1,9 +1,12 @@
 ### **A Basic Rebase**
 
-I have a bash shell script that creates three commits in the master
-ranch. Then, the script creates and checks out a new branch called
-feature. In the feature branch two commits are created. Finally, two
-more commits are created in the master branch.
+<sup>Adapted from https://git-scm.com/book/en/v2/Git-Branching-Rebasing</sup>
+
+I have a bash shell script (runrebasecommits.sh located in this repo) 
+that creates three commits in the master branch. Then, the script 
+creates and checks out a new branch called feature. In the feature 
+branch two commits are created. Finally, two more commits are created 
+in the master branch.
 
 ![](.//rebase_images/image1.png)
 
