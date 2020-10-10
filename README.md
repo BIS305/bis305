@@ -1,4 +1,4 @@
-# Northern Kentucky University BIS 305 Class Repos
+# NKU BIS 305 Class Repos
 
 ![](.//images/readmeheader.PNG)
 
