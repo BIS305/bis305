@@ -1,4 +1,4 @@
-# NKU BIS 305 Class Repos
+# NKU BIS 305 Class Repositories
 
 ![](.//images/readmeheader.PNG)
 
