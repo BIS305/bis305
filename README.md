@@ -1,7 +1,7 @@
 # NKU BIS 305 Class Repositories
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://shields.io/)
-[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](https://shields.io/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://shields.io/)
+[![Version](https://img.shields.io/badge/semver-1.0.0-orange.svg)](https://shields.io/)
 
 ![](.//images/readmeheader.PNG)
 
