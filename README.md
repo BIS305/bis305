@@ -1,5 +1,7 @@
 # NKU BIS 305 Class Repositories
 
+[![Generic badge](https://img.shields.io/badge/License-MIT-blue.svg)](https://shields.io/)
+
 ![](.//images/readmeheader.PNG)
 
 ## A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. 
