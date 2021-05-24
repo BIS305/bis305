@@ -49,7 +49,7 @@ stopping when you tell it to:
 First, assuming that you are on a Windows machine, let us run the
 createResetCommits.ps1 PowerShell script contained in the
 <https://github.com/BIS305/bis305> repo. This will create a folder named
-test, creates an empty Git repository in test, and then creates with 3
+test, an empty Git repository in test, and then 3
 commits in the Git repository.
 
 After running the PowerShell script, here is the repo history in the
@@ -71,7 +71,7 @@ Here is a picture of the state of the repo and locations:
 ![A screenshot of a cell phone Description automatically
 generated](.//reset_images/image4.PNG)
 
-So, we see the content of the repo HEAD, stage, and working tree is the
+So, we see the content of the repo HEAD, stage, and working tree are the
 same.
 
 Soft Reset
@@ -166,7 +166,7 @@ However, looking at the repo status:
 
 Here we see that stage was updated with the 919b664 (2nd) commit
 content, File.txt v2, and therefore File.txt v3 in the working tree is
-now considered untracked as it is different that the repo history and
+now considered untracked as it is different than the repo history and
 stage content.
 
 Concerning the working tree, we expect it to be unchanged in a mixed
@@ -242,7 +242,7 @@ content of the 2nd commit:
 
 ![](.//reset_images/image16.png)
 
-Yes, it is as the File.txt v3 has been removed by the hard reset to the
+Yes, File.txt v3 has been removed by the hard reset to the
 content of the 2nd commit, File.txt v2.
 
 Here is a picture of the state of the repo and locations:
