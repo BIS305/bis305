@@ -1,0 +1,328 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Git Bash Command Line Reference</title>
+<style type="text/css">
+	html, body, div, span, h2, h3, h4, h5, h6, p, blockquote, pre, a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	}
+	body {
+		line-height: 1;
+	}
+	/* Body, links, basics */
+	html {
+		font-size: 87.5%;
+	}
+	body {
+		font-size: 14px;
+		font-size: 1rem;
+		font-family: Helvetica, Arial, sans-serif;
+		text-rendering: optimizeLegibility;
+		color: #444;
+	}
+	.myhead {
+		font-size: 28px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	
+	/* pre tag formatting */
+	pre.command-line {
+		border:2px solid #0000ff;
+		background-color:#000000;
+		color:#ffffff;
+		padding:10px;
+	}
+	pre.command-line em {\
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		font-size: 16px;
+		color:#F9FE64;
+		font-style:italic
+	}
+	pre.command-line .command {
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		font-size: 16px;
+		color:#ffffff;
+	}
+	pre.command-line .comment {
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		font-size: 16px;
+		color:#ffffff;
+	}
+	pre.command-line .output{
+		font-family: "Trebuchet MS", Verdana, sans-serif;
+		font-size: 16px;
+		color:#63E463;
+	}
+	pre.command-line .output span{
+		position:fixed;
+		top:-1000px;
+		left:-1000px
+	}
+	
+	.entry-content pre,
+	.comment-content pre {
+		border: 1px solid #ededed;
+		color: #666;
+		font-family: Consolas, Monaco, Lucida Console, monospace;
+		font-size: 12px;
+		font-size: 0.857142857rem;
+		line-height: 1.714285714;
+		margin: 24px 0;
+		/* margin: 1.714285714rem 0;
+		overflow: auto; 
+		padding: 24px;
+		padding: 1.714285714rem; */
+	}
+	.entry-content pre code,
+	.comment-content pre code {
+		display: block;
+	}
+
+/* RV pre command-line end */
+</style>
+</head>
+<body>
+<div class="myhead">Git Bash Command Line Reference</div><br/><br/>
+<!-- from http://robertovormittag.net/ebooks/git-and-github/git-bash-command-line-reference/ -->
+<div class="entry-content">
+	<h3>&nbsp;&nbsp;Basic CLI</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># change to home directory</span>
+		<span class="command">$ cd ~</span><br/>
+		<span class="output"># creates a folder</span>
+		<span class="command">$ mkdir <em>&lt;folder name&gt;</em></span><br/>
+		<span class="output"># change to folder</span>
+		<span class="command">$ cd <em>&lt;folder name&gt;</em></span><br/>
+		<span class="output"># prints current directory</span>
+		<span class="command">$ pwd</span><br/>
+		<span class="output"># list folder contents</span>
+		<span class="command">$ ls -a</span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Basic Git Configuration</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># tells git who you are</span>
+		<span class="command">$ git config --global user.name "<em>your name</em>"</span><br/>
+		<span class="output"># tells git your email</span>
+		<span class="command">$ git config --global user.email "<em>your.email@domain.com</em>"</span><br/>
+		<span class="output"># handles end-of-line character differences</span>
+		<span class="command">$ git config --global core.autocrlf true</span><br/>
+		<span class="output"># prevents conversion warning messages</span>
+		<span class="command">$ git config --global core.safecrlf false</span><br/>
+		<span class="output"># sets VS Code as the default editor</span>
+		<span class="command">$ git config --global core.editor code</span><br/>
+		<span class="output"># list all current configuration settings</span>
+		<span class="command">$ git config --list</span>
+	</pre>
+	<p></p>
+	<!-- <h3>&nbsp;&nbsp;Connecting Git to GitHub</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># generate SSH keys</span>
+		<span class="command">$ ssh-keygen -t rsa -b 4096 -C "<em>your.email@domain.com</em>"</span><br/>
+		<span class="output"># run the SSH agent</span>
+		<span class="command">$ eval `ssh-agent -s`</span><br/>
+		<span class="output"># add private key</span>
+		<span class="command">$ ssh-add ~/.ssh/id_rsa</span><br/>
+		<span class="output"># test the connection</span>
+		<span class="command">$ ssh -T git@github.com</span>
+	</pre>
+	<p></p> -->
+	<h3>&nbsp;&nbsp;Hosting Your Projects on GitHub</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># clone a GitHub repository</span>
+		<span class="command">$ git clone https://github.com/<em>your-name</em>/<em>your-repo</em></span><br/>
+		<span class="output"># check working directory changes</span>
+		<span class="command">$ git status</span><br/>
+		<span class="output"># add changes to index</span>
+		<span class="command">$ git add <em>&lt;folder&gt;</em></span>
+		<span class="command">$ git add <em>&lt;file&gt;</em></span>
+		<span class="command">$ git add .</span><br/>
+		<span class="output"># commit a new version</span>
+		<span class="command">$ git commit -m <em>&lt;comment&gt;</em></span><br/>
+		<span class="output"># identify remote repository</span>
+		<span class="command">$ git remote</span>
+		<span class="command">$ git remote show <em>&lt;repo name&gt;</em></span><br/>
+		<span class="output"># push new version to GitHub</span>
+		<span class="command">$ git push origin main</span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Version History and Tags</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># show history of commits</span>
+		<span class="command">$ git log --oneline --decorate</span><br/>
+		<span class="output"># apply tag to a version</span>
+		<span class="command">$ git tag -a <em>&lt;version&gt;</em> <em>&lt;commit&gt;</em> -m <em>&lt;comment&gt;</em></span><br/>
+		<span class="output"># tag the last commit</span>
+		<span class="command">$ git tag <em>&lt;version&gt;</em> -m <em>&lt;comment&gt;</em></span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Comparing Versions</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># view changes not yet staged</span>
+		<span class="command">$ git diff <em>&lt;file&gt;</em></span><br/>
+		<span class="output"># view the changes between the index and the last commit</span>
+		<span class="command">$ git diff --cached <em>&lt;file&gt;</em></span><br/>
+		<span class="output"># view the changes in the working tree since the last commit</span>
+		<span class="command">$ git diff HEAD <em>&lt;file&gt;</em></span><br/>
+		<span class="output"># view changes between two commits</span>
+		<span class="command">$ git diff <em>&lt;commit1&gt;</em> <em>&lt;commit2&gt;</em> <em>&lt;file&gt;</em></span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Undoing Changes</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># undo unstaged changes</span>
+		<span class="command">$ git checkout <em>&lt;file&gt;</em></span><br/>
+		<span class="output"># undo staged changes</span>
+		<span class="command">$ git reset HEAD <em>&lt;file&gt;</em></span><br/>
+		<span class="output"># undo committed change</span>
+		<span class="command">$ git revert <em>&lt;commit&gt;</em> --no-edit</span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Moving, Deleting and Renaming Files</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># move or rename a file and stage the change</span>
+		<span class="command">$ git mv <em>&lt;source&gt;</em> <em>&lt;destination&gt;</em></span><br/>
+		<span class="output"># delete a file and stage the change</span>
+		<span class="command">$ git rm <em>&lt;file&gt;</em></span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Branching and Merging</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># create a branch</span>
+		<span class="command">$ git branch <em>&lt;branch name&gt;</em></span><br/>
+		<span class="output"># list local branches</span>
+		<span class="command">$ git branch</span><br/>
+		<span class="output"># list remote-tracking branches</span>
+		<span class="command">$ git branch --remote</span><br/>
+		<span class="output"># list all branches</span>
+		<span class="command">$ git branch --all</span><br/>
+		<span class="output"># switch to another branch</span>
+		<span class="command">$ git checkout <em>&lt;branch name&gt;</em></span><br/>
+		<span class="output"># merge from branch</span>
+		<span class="command">$ git merge <em>&lt;branch name&gt;</em></span><br/>
+		<span class="output"># creates a new branch and switches to it</span>
+		<span class="command">$ git checkout -b <em>&lt;branch name&gt;</em></span><br/>
+		<span class="output"># deletes a branch</span>
+		<span class="command">$ git branch -D  <em>&lt;branch name&gt;</em></span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Keeping your Fork Synchronized</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># add a new remote identified by upstream</span>
+		<span class="command">$ git remote add upstream https://github.com/<em>user-name</em>/<em>repo-name</em></span><br/>
+		<span class="output"># list remotes with URL</span>
+		<span class="command">$ git remote --verbose</span><br/>
+		<span class="output"># fetch the latest commits from remote identified by upstream</span>
+		<span class="command">$ git fetch upstream</span><br/>
+		<span class="output"># update local main from remote identified by upstream</span>
+		<span class="command">$ git checkout main</span>
+		<span class="command">$ git merge upstream/main</span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;More Git Magic</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># initializes a local repo inside current directory</span>
+		<span class="command">$ git init</span><br/>
+		<span class="output"># goes back in history to the specified commit</span>
+		<span class="command">$ git checkout <em>&lt;commit&gt;</em></span><br/>
+		<span class="output"># move HEAD pointer to specified commit</span>
+		<span class="command">$ git reset --hard <em>&lt;commit&gt;</em></span><br/>
+		<span class="output"># replay commits on current branch</span>
+		<span class="command">$ git rebase <em>&lt;branch name&gt;</em></span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Saving Changes</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># saves changes and clear working directory</span>
+		<span class="command">$ git stash</span><br/>
+		<span class="output"># list saved changes</span>
+		<span class="command">$ git stash list</span><br/>
+		<span class="output"># show saved changes</span>
+		<span class="command">$ git stash show</span><br/>
+		<span class="output"># restore saved changes</span>
+		<span class="command">$ git stash apply</span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;More Git Bash Magic</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># creates an empty file</span>
+		<span class="command">$ touch <em>&lt;file name&gt;</em></span><br/>
+		<span class="output"># open a text file in VS Code</span>
+		<span class="command">$ code <em>&lt;file name&gt;</em></span><br/>
+		<span class="output"># inserts a string into a text file</span>
+		<span class="command">$ echo "<em>some string</em>" &gt;&gt; <em>&lt;file name&gt;</em></span><br/>
+		<span class="output"># show contents of text file</span>
+		<span class="command">$ cat <em>&lt;file name&gt;</em></span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;The Repository Database</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># list repository folder</span>
+		<span class="command">$ ls .git</span><br/>
+		<span class="output"># look at HEAD pointer</span>
+		<span class="command">$ cat .git/HEAD</span><br/>
+		<span class="output"># list refs directory tree</span>
+		<span class="command">$ find .git/refs</span><br/>
+		<span class="output"># last commit on main</span>
+		<span class="command">$ cat .git/refs/heads/main</span><br/>
+		<span class="output"># list objects directory tree</span>
+		<span class="command">$ find .git/objects</span><br/>
+		<span class="output"># displays type of a Git object</span>
+		<span class="command">$ git cat-file -t <em>&lt;hash&gt;</em></span><br/>
+		<span class="output"># displays the content of a Git object</span>
+		<span class="command">$ git cat-file -p <em>&lt;hash&gt;</em></span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;A More Sophisticated History View</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># convert end-of-line to DOS format</span>
+		<span class="command">$ unix2dos <em>&lt;file&gt;</em></span><br/>
+		<span class="output"># convert end-of-line to Unix format</span>
+		<span class="command">$ dos2unix <em>&lt;file&gt;</em></span><br/>
+		<span class="output"># formatting history log</span>
+		<span class="command">$ git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short</span><br/>
+		<span class="output"># using an alias</span>
+		<span class="command">$ git <em>&lt;alias&gt;</em></span>
+	</pre>
+	<p></p>
+	<h3>&nbsp;&nbsp;Centralized Workflow</h3>
+	<p></p>
+	<pre class="command-line">
+		<span class="output"># list all branches</span>
+		<span class="command">$ git branch -a -v</span><br/>
+		<span class="output"># list tracking branches</span>
+		<span class="command">$ git branch -vv</span><br/>
+		<span class="output"># create a tracking branch</span>
+		<span class="command">$ git checkout -b <em>&lt;local branch&gt;</em> <em>&lt;remote branch&gt;</em></span><br/>
+		<span class="output"># update your local copy of remote branches</span>
+		<span class="command">$ git fetch <em>&lt;remote name&gt;</em></span><br/>
+		<span class="output"># push code directly to remote branch</span>
+		<span class="command">$ git push <em>&lt;remote name&gt;</em> HEAD:<em>&lt;branch name&gt;</em></span><br/>
+		<span class="output"># push feature branch to remote repo</span>
+		<span class="command">$ git push <em>&lt;remote name&gt;</em> <em>&lt;branch name&gt;</em></span>
+	</pre>
+	<p>&nbsp;</p>
+</div>
+</body>
+</html>
